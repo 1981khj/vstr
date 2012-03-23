@@ -28,14 +28,14 @@ $(document).ready(function () {
 	});
 	
 	function capture(){
-		var scaleFactor = 0.1;
+		var scaleFactor = 0.05;
 		var w = $("#video")[0].videoWidth * scaleFactor;
 		var h =  $("#video")[0].videoHeight * scaleFactor;
 		canvas.width  = w;
 		canvas.height = h;
 		ctx.drawImage(video, 0, 0, w, h);
         alert(canvas.toDataURL());
-		var stringData=canvas.toDataURL();        
+		var stringData=canvas.toDataURL();
         socket.emit('receiveImg',stringData);
 	}
 	
