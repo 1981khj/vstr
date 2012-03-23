@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    //var socket = io.connect('http://vstr.herokuapp.com/');
-    var socket = io.connect('http://vslab.hjkim.c9.io/');
+    var socket = io.connect('http://vstr.herokuapp.com/');
+    //var socket = io.connect('http://vslab.hjkim.c9.io/');
     var video  = $("#video")[0];
     var canvas = $("#canvas")[0];
 	var ctx = canvas.getContext('2d');
