@@ -6,6 +6,11 @@ $(document).ready(function () {
         console.log("drawImg");
 
     });
+    
+    socket.on('join', function(data) {
+        alert("welcome");
+
+    });
 	var canvas = $("#canvas")[0];
 	var ctx = canvas.getContext('2d');
 	var intervalTimer=null;

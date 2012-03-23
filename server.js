@@ -47,7 +47,12 @@ io.configure('development', function(){
 });
 
 io.sockets.on('connection', function(socket) {
+    socket.on('join', function(){
+        io.sockets.emit('join');
+    });
+    
     socket.on('receiveImg', function(data){        
+        io.sockets.emit('imgdata', data);
         io.sockets.emit('drawImg', data);
     });
     
