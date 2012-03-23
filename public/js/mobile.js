@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    var socket = io.connect('http://vstr.herokuapp.com/');
-    //var socket = io.connect('http://vslab.hjkim.c9.io/');
+    //var socket = io.connect('http://vstr.herokuapp.com/');
+    var socket = io.connect('http://vslab.hjkim.c9.io/');
     var video  = $("#video")[0];
     var canvas = $("#canvas")[0];
 	var ctx = canvas.getContext('2d');
@@ -28,7 +28,7 @@ $(document).ready(function () {
 	});
 	
 	function capture(){
-		var scaleFactor = 0.05;
+		var scaleFactor = 0.01;
 		var w = $("#video")[0].videoWidth * scaleFactor;
 		var h =  $("#video")[0].videoHeight * scaleFactor;
 		canvas.width  = w;

@@ -29,6 +29,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/teacher', function(req, res) {
+    
     res.render('index');
 });
 
