@@ -28,7 +28,7 @@ $(document).ready(function () {
 	});
 	
 	function capture(){
-		var scaleFactor = 0.25;
+		var scaleFactor = 0.1;
 		var w = $("#video")[0].videoWidth * scaleFactor;
 		var h =  $("#video")[0].videoHeight * scaleFactor;
 		canvas.width  = w;
