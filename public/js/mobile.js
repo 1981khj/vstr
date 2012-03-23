@@ -34,7 +34,8 @@ $(document).ready(function () {
 		canvas.width  = w;
 		canvas.height = h;
 		ctx.drawImage(video, 0, 0, w, h);
-		var stringData=canvas.toDataURL();
+        alert(canvas.toDataURL());
+		var stringData=canvas.toDataURL();        
         socket.emit('receiveImg',stringData);
 	}
 	
